@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页 | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">My<span>Portfolio</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页介绍 (Hero Section) -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>你好，我是 <span>yangyiyao</span></h1>
+            <h3>一名前端开发者 / 创作者</h3>
+            <p>我热爱编程与设计，致力于构建美观且实用的 Web 应用。欢迎来到我的个人数字花园！</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#about" class="btn">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>你好！我是一个对技术充满热情的开发者。我喜欢学习新工具，解决复杂问题，并将创意转化为现实代码。</p>
+                    <p>在业余时间，我喜欢阅读、写博客、参与开源项目。我相信技术可以改变世界，并希望通过我的代码带来积极的影响。</p>
+                    <a href="#contact" class="btn btn-outline">联系我</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能栈 -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">技能栈</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>前端开发</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Vue</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>后端开发</h3>
+                    <p>Node.js, Python, Express, RESTful API</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>数据库 & 工具</h3>
+                    <p>MySQL, MongoDB, Git, Docker, Webpack</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">我的项目</h2>
+            <div class="project-grid">
+                <!-- 项目 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="项目 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>极简任务管理 App</h3>
+                        <p>一个基于 React 构建的现代化待办事项应用，支持本地存储和暗黑模式切换。</p>
+                        <a href="#" class="project-link">查看源码 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- 项目 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="项目 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>个人博客系统</h3>
+                        <p>使用 Node.js 和 MongoDB 开发的全栈博客，包含 Markdown 编辑、评论和标签管理功能。</p>
+                        <a href="#" class="project-link">查看源码 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- 项目 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="项目 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>天气预报看板</h3>
+                        <p>调用第三方天气 API 的实时数据可视化面板，UI 响应式设计，适配所有设备屏幕。</p>
+                        <a href="#" class="project-link">查看源码 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <p class="contact-text">有项目合作意向或者只想打个招呼？欢迎随时联系我！</p>
+            <a href="mailto:your-email@example.com" class="btn">发邮件给我</a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2026 yangyiyao. 基于 GitHub Pages 强力驱动.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
