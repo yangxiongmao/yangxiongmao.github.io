@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // 从 Supabase 读取帖子表数据，按创建时间倒序排列
-            const { data: posts, error } = await supabase
+            const { data: posts, error } = await supabaseClient
                 .from('posts')
                 .select('*')
                 .order('created_at', { ascending: false });
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // 写入数据库
-            const { data, error } = await supabase
+            const { data, error } = await supabaseClient
                 .from('posts')
                 .insert([
                     {
