@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>职言瓜田 - 真实的职场吐槽与八卦</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-seedling"></i> 职言瓜田
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索公司、爆料、职位...">
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-outline" id="loginBtn">登录/注册</button>
+                <button class="btn btn-primary" id="postBtn"><i class="fas fa-pen"></i> 发吐槽</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容区 -->
+    <main class="main-container">
+        <!-- 左侧/顶部 筛选区 -->
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3>🔥 热门赛道</h3>
+                <ul class="filter-list" id="industryFilter">
+                    <li class="active" data-filter="all">全部行业</li>
+                    <li data-filter="internet">🌐 互联网/大厂</li>
+                    <li data-filter="finance">💰 金融/银行</li>
+                    <li data-filter="education">📚 教培/科研</li>
+                    <li data-filter="medical">🏥 医疗/大健康</li>
+                    <li data-filter="auto">🚗 汽车/新能源</li>
+                    <li data-filter="foreign">🌍 外企/出海</li>
+                </ul>
+            </div>
+            
+            <div class="filter-section">
+                <h3>🏷️ 话题标签</h3>
+                <div class="tags-container" id="topicFilter">
+                    <span class="tag active" data-tag="all">全部</span>
+                    <span class="tag tag-red" data-tag="layoff">✂️ 裁员预警</span>
+                    <span class="tag tag-orange" data-tag="gossip">🍉 职场八卦</span>
+                    <span class="tag tag-blue" data-tag="hiring">💼 急招内推</span>
+                    <span class="tag tag-green" data-tag="fun">🤡 奇葩趣事</span>
+                    <span class="tag tag-purple" data-tag="salary">💸 薪资爆料</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 中间 信息流区 -->
+        <section class="feed">
+            <!-- 帖子发布快捷入口 (移动端可见或置顶) -->
+            <div class="quick-post">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Anonymous" alt="Avatar" class="avatar">
+                <input type="text" placeholder="今天你们公司有什么瓜？匿名吐槽一下..." readonly>
+                <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+            </div>
+
+            <!-- 动态列表 -->
+            <div class="post-list">
+                
+                <!-- 帖子 1：裁员预警 (付费吃瓜) -->
+                <div class="post-card" data-industry="internet" data-topic="layoff">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar" class="avatar">
+                            <div class="user-info">
+                                <span class="username">某大厂 P8 员工</span>
+                                <span class="post-time">10分钟前 · 认证员工</span>
+                            </div>
+                        </div>
+                        <div class="post-tags">
+                            <span class="badge badge-red">裁员预警</span>
+                            <span class="badge badge-gray">互联网</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">🚨 某福报厂电商业务线即将开启新一轮“优化”</h2>
+                        <p class="post-text">刚刚开完内部对齐会，据说月底前要完成 15% 的人员盘点。重灾区主要在生鲜和社区团购业务。目前确定的 N+1 赔偿方案是...</p>
+                        <!-- 付费解锁模块 -->
+                        <div class="pay-to-read">
+                            <div class="pay-overlay"></div>
+                            <div class="pay-box">
+                                <i class="fas fa-lock"></i>
+                                <span>支付 ￥1.99 解锁完整裁员名单与赔偿细节</span>
+                                <button class="btn btn-pay">立即支付查看</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <button class="action-btn"><i class="far fa-thumbs-up"></i> 1.2k</button>
+                        <button class="action-btn"><i class="far fa-comment"></i> 342</button>
+                        <button class="action-btn"><i class="fas fa-share"></i> 分享</button>
+                    </div>
+                </div>
+
+                <!-- 帖子 2：职场八卦 -->
+                <div class="post-card" data-industry="finance" data-topic="gossip">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka" alt="Avatar" class="avatar">
+                            <div class="user-info">
+                                <span class="username">匿名瓜农</span>
+                                <span class="post-time">1小时前</span>
+                            </div>
+                        </div>
+                        <div class="post-tags">
+                            <span class="badge badge-orange">职场八卦</span>
+                            <span class="badge badge-gray">金融</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">惊天大瓜！某头部券商投行部 MD 居然...</h2>
+                        <p class="post-text">今天整个陆家嘴都传疯了。平时西装革履的张总，竟然在周末的团建活动上，和刚刚入职两个月的实习生上演了一出“霸道总裁爱上我”的戏码。据说正室已经拿着聊天记录去公司闹了，目前 HR 正在紧急公关处理。太刺激了！</p>
+                    </div>
+                    <div class="post-footer">
+                        <button class="action-btn"><i class="far fa-thumbs-up"></i> 890</button>
+                        <button class="action-btn"><i class="far fa-comment"></i> 560</button>
+                        <button class="action-btn"><i class="fas fa-donate"></i> 打赏爆料人</button>
+                    </div>
+                </div>
+
+                <!-- 帖子 3：招聘内推 -->
+                <div class="post-card" data-industry="auto" data-topic="hiring">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Bob" alt="Avatar" class="avatar">
+                            <div class="user-info">
+                                <span class="username">HR 小姐姐</span>
+                                <span class="post-time">3小时前 · 官方认证 HR</span>
+                            </div>
+                        </div>
+                        <div class="post-tags">
+                            <span class="badge badge-blue">急招内推</span>
+                            <span class="badge badge-gray">新能源汽车</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">🚀 某头部造车新势力，急招自动驾驶算法工程师！</h2>
+                        <p class="post-text">急急急！HC 充足，面试流程极快（一天内面完）。要求有 3 年以上 C++ 经验，熟悉 ROS。薪资 Open，最高可给到 80k + 期权。不卷，双休！</p>
+                        <div class="resume-box">
+                            <i class="fas fa-file-pdf"></i> <span>简历直达部门 Leader</span>
+                            <button class="btn btn-outline btn-sm">投递简历</button>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <button class="action-btn"><i class="far fa-thumbs-up"></i> 120</button>
+                        <button class="action-btn"><i class="far fa-comment"></i> 45</button>
+                        <button class="action-btn"><i class="fas fa-bookmark"></i> 收藏</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 右侧 榜单/广告区 -->
+        <aside class="right-sidebar">
+            <div class="trending-box">
+                <h3>📈 24小时热搜榜</h3>
+                <ul class="trending-list">
+                    <li><span class="rank top">1</span> 某互联网大厂取消下午茶 <span class="hot-icon">热</span></li>
+                    <li><span class="rank top">2</span> 投行降薪潮来袭</li>
+                    <li><span class="rank top">3</span> 如何优雅地拒绝 HR 压薪</li>
+                    <li><span class="rank">4</span> 程序员 35 岁转行指南</li>
+                    <li><span class="rank">5</span> 今年秋招最惨专业大盘点</li>
+                </ul>
+            </div>
+
+            <div class="ad-box">
+                <h4>💼 优质企业赞助位</h4>
+                <div class="ad-content">
+                    <p>想要在这里展示你们公司的神仙福利吗？</p>
+                    <button class="btn btn-primary btn-full">立即联系投放</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 移动端底部导航 (只在手机端显示) -->
+    <nav class="mobile-nav">
+        <a href="#" class="nav-item active"><i class="fas fa-home"></i><span>首页</span></a>
+        <a href="#" class="nav-item"><i class="fas fa-fire"></i><span>热榜</span></a>
+        <a href="#" class="nav-item post-btn-mobile"><i class="fas fa-plus"></i></a>
+        <a href="#" class="nav-item"><i class="fas fa-envelope"></i><span>消息</span></a>
+        <a href="#" class="nav-item"><i class="fas fa-user"></i><span>我的</span></a>
+    </nav>
+
+    <!-- 支付弹窗 (隐藏) -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>选择支付方式</h3>
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="pay-amount">需支付: <span>￥1.99</span></p>
+                <div class="pay-methods">
+                    <button class="pay-method-btn wechat"><i class="fab fa-weixin"></i> 微信支付</button>
+                    <button class="pay-method-btn alipay"><i class="fab fa-alipay"></i> 支付宝</button>
+                </div>
+                <p class="pay-tips">支付后立即解锁该帖子的全部内容，并在您的账号下永久保存记录。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入 Supabase JS 客户端 -->
+    <!-- 发帖弹窗 (隐藏) -->
+    <div class="modal" id="postModal">
+        <div class="modal-content post-modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-pen-nib"></i> 发布新吐槽</h3>
+                <button class="close-btn" id="closePostModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>标题</label>
+                    <input type="text" id="postTitleInput" placeholder="一句话概括你的大瓜（如：某大厂奇葩规定）" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label>赛道/行业</label>
+                    <select id="postIndustrySelect">
+                        <option value="internet">🌐 互联网/大厂</option>
+                        <option value="finance">💰 金融/银行</option>
+                        <option value="education">📚 教培/科研</option>
+                        <option value="medical">🏥 医疗/大健康</option>
+                        <option value="auto">🚗 汽车/新能源</option>
+                        <option value="foreign">🌍 外企/出海</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>话题标签</label>
+                    <select id="postTopicSelect">
+                        <option value="gossip">🍉 职场八卦</option>
+                        <option value="layoff">✂️ 裁员预警</option>
+                        <option value="hiring">💼 急招内推</option>
+                        <option value="fun">🤡 奇葩趣事</option>
+                        <option value="salary">💸 薪资爆料</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>详细内容</label>
+                    <textarea id="postContentInput" rows="5" placeholder="尽情畅所欲言吧，我们将严格保护您的隐私..."></textarea>
+                </div>
+                <button class="btn btn-primary btn-full" id="submitPostBtn"><i class="fas fa-paper-plane"></i> 匿名发布</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
