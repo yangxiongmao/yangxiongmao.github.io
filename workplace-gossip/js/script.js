@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } catch (err) {
             console.error('加载帖子失败:', err);
-            postListContainer.innerHTML = '<div style="text-align:center; padding: 20px; color: var(--text-red);">加载失败，请检查数据库连接。</div>';
+            postListContainer.innerHTML = '<div style="text-align:center; padding: 20px; color: var(--text-red);">加载失败，报错信息: ' + (err.message || err.toString()) + '</div>';
         }
     }
 
