@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人主页 | Portfolio</title>
+    <title>2026年北京市中考政策说明</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- 引入字体图标 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">My<span>Portfolio</span></a>
+            <a href="#" class="logo"><i class="fas fa-graduation-cap"></i> 北京中考<span>2026</span></a>
             <ul class="nav-links">
                 <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#skills">技能</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#contact">联系我</a></li>
+                <li><a href="#overview">政策概览</a></li>
+                <li><a href="#subjects">考试科目</a></li>
+                <li><a href="#sports">体育考试</a></li>
+                <li><a href="#enrollment">招生录取</a></li>
+                <li><a href="#bonus">加分政策</a></li>
+                <li><a href="#eligibility">报名条件</a></li>
+                <li><a href="#timeline">时间安排</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -26,115 +28,606 @@
         </div>
     </nav>
 
-    <!-- 首页介绍 (Hero Section) -->
+    <!-- 首页横幅 -->
     <section class="hero" id="home">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>你好，我是 <span>yangyiyao</span></h1>
-            <h3>一名前端开发者 / 创作者</h3>
-            <p>我热爱编程与设计，致力于构建美观且实用的 Web 应用。欢迎来到我的个人数字花园！</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+            <div class="hero-badge">官方政策解读</div>
+            <h1>2026年北京市中考</h1>
+            <h2>中招政策全面说明</h2>
+            <p>总分510分 · 普高招生9.5万人 · 多元录取通道<br>考后知分填报志愿 · 登记入学试点扩大</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">510</span>
+                    <span class="stat-label">总分</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">9.5<small>万</small></span>
+                    <span class="stat-label">普高招生</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">考试科目</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">录取阶段</span>
+                </div>
             </div>
-            <a href="#about" class="btn">了解更多</a>
+            <a href="#overview" class="btn btn-hero">查看政策详情 <i class="fas fa-arrow-down"></i></a>
         </div>
     </section>
 
-    <!-- 关于我 -->
-    <section class="about" id="about">
+    <!-- 政策概览 -->
+    <section class="section section-light" id="overview">
         <div class="container">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>你好！我是一个对技术充满热情的开发者。我喜欢学习新工具，解决复杂问题，并将创意转化为现实代码。</p>
-                    <p>在业余时间，我喜欢阅读、写博客、参与开源项目。我相信技术可以改变世界，并希望通过我的代码带来积极的影响。</p>
-                    <a href="#contact" class="btn btn-outline">联系我</a>
+            <h2 class="section-title">政策概览</h2>
+            <p class="section-subtitle">2026年北京中考改革要点与核心变化</p>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>总分调整</h3>
+                    <p>中招录取总分为<strong>510分</strong>，计入6科成绩。语文、数学、外语各100分，道德与法治、物理各80分，体育与健康50分。</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 技能栈 -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">技能栈</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>前端开发</h3>
-                    <p>HTML5, CSS3, JavaScript, React, Vue</p>
+                <div class="overview-card">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h3>招生扩容</h3>
+                    <p>普通高中招生规模扩大至<strong>9.5万人</strong>，较2025年增加约1万人。中等职业教育招生3.3万人。</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-node-js"></i>
-                    <h3>后端开发</h3>
-                    <p>Node.js, Python, Express, RESTful API</p>
+                <div class="overview-card">
+                    <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>登记入学扩大</h3>
+                    <p>登记入学试点范围扩大，由东城、西城进一步扩展到<strong>平谷区</strong>，更多学生可通过登记方式入学。</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>数据库 & 工具</h3>
-                    <p>MySQL, MongoDB, Git, Docker, Webpack</p>
+                <div class="overview-card">
+                    <div class="card-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>批次调整</h3>
+                    <p>贯通培养项目自2026年起从提前批调整至<strong>统一招生批次</strong>录取，最低分数线380分。</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 项目展示 -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">我的项目</h2>
-            <div class="project-grid">
-                <!-- 项目 1 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="项目 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>极简任务管理 App</h3>
-                        <p>一个基于 React 构建的现代化待办事项应用，支持本地存储和暗黑模式切换。</p>
-                        <a href="#" class="project-link">查看源码 <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                <div class="overview-card">
+                    <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>教育均衡</h3>
+                    <p>优质普通高中不低于<strong>50%</strong>的招生计划分配到一般初中校（校额到校），促进教育公平。</p>
                 </div>
-                <!-- 项目 2 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="项目 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>个人博客系统</h3>
-                        <p>使用 Node.js 和 MongoDB 开发的全栈博客，包含 Markdown 编辑、评论和标签管理功能。</p>
-                        <a href="#" class="project-link">查看源码 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- 项目 3 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="项目 3">
-                    </div>
-                    <div class="project-info">
-                        <h3>天气预报看板</h3>
-                        <p>调用第三方天气 API 的实时数据可视化面板，UI 响应式设计，适配所有设备屏幕。</p>
-                        <a href="#" class="project-link">查看源码 <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                <div class="overview-card">
+                    <div class="card-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <h3>志愿填报</h3>
+                    <p>实行<strong>考后知分填报</strong>志愿。指标分配8个志愿，统一招生12个志愿，每个志愿可填2个专业。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 联系方式 -->
-    <section class="contact" id="contact">
+    <!-- 考试科目与分值 -->
+    <section class="section section-white" id="subjects">
         <div class="container">
-            <h2 class="section-title">联系我</h2>
-            <p class="contact-text">有项目合作意向或者只想打个招呼？欢迎随时联系我！</p>
-            <a href="mailto:your-email@example.com" class="btn">发邮件给我</a>
+            <h2 class="section-title">考试科目与分值</h2>
+            <p class="section-subtitle">中招录取总分510分，共6科计入成绩</p>
+            <div class="subjects-wrapper">
+                <div class="subject-table-container">
+                    <table class="subject-table">
+                        <thead>
+                            <tr>
+                                <th>科目</th>
+                                <th>满分</th>
+                                <th>考试形式</th>
+                                <th>备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="subject-badge badge-chinese">语</span> 语文</td>
+                                <td><strong>100</strong>分</td>
+                                <td>笔试</td>
+                                <td>统一考试</td>
+                            </tr>
+                            <tr>
+                                <td><span class="subject-badge badge-math">数</span> 数学</td>
+                                <td><strong>100</strong>分</td>
+                                <td>笔试</td>
+                                <td>统一考试</td>
+                            </tr>
+                            <tr>
+                                <td><span class="subject-badge badge-english">外</span> 外语</td>
+                                <td><strong>100</strong>分</td>
+                                <td>笔试 + 听说机考</td>
+                                <td>听说机考两次机会，取最高分</td>
+                            </tr>
+                            <tr>
+                                <td><span class="subject-badge badge-politics">政</span> 道德与法治</td>
+                                <td><strong>80</strong>分</td>
+                                <td>笔试</td>
+                                <td>统一考试</td>
+                            </tr>
+                            <tr>
+                                <td><span class="subject-badge badge-physics">物</span> 物理</td>
+                                <td><strong>80</strong>分</td>
+                                <td>笔试</td>
+                                <td>统一考试</td>
+                            </tr>
+                            <tr>
+                                <td><span class="subject-badge badge-sports">体</span> 体育与健康</td>
+                                <td><strong>50</strong>分</td>
+                                <td>现场考试 + 过程性考核</td>
+                                <td>现场30分 + 过程性20分</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td><strong>合计</strong></td>
+                                <td><strong>510分</strong></td>
+                                <td colspan="2">文化课统一考试时间：6月24日-25日</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="score-chart">
+                    <h3>分值占比</h3>
+                    <div class="chart-bars">
+                        <div class="chart-bar-item">
+                            <span class="bar-label">语文</span>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-chinese" style="width: 100%;">100分</div>
+                            </div>
+                        </div>
+                        <div class="chart-bar-item">
+                            <span class="bar-label">数学</span>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-math" style="width: 100%;">100分</div>
+                            </div>
+                        </div>
+                        <div class="chart-bar-item">
+                            <span class="bar-label">外语</span>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-english" style="width: 100%;">100分</div>
+                            </div>
+                        </div>
+                        <div class="chart-bar-item">
+                            <span class="bar-label">道法</span>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-politics" style="width: 80%;">80分</div>
+                            </div>
+                        </div>
+                        <div class="chart-bar-item">
+                            <span class="bar-label">物理</span>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-physics" style="width: 80%;">80分</div>
+                            </div>
+                        </div>
+                        <div class="chart-bar-item">
+                            <span class="bar-label">体育</span>
+                            <div class="bar-track">
+                                <div class="bar-fill fill-sports" style="width: 50%;">50分</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 体育考试 -->
+    <section class="section section-light" id="sports">
+        <div class="container">
+            <h2 class="section-title">体育与健康考试</h2>
+            <p class="section-subtitle">总分50分 = 现场考试30分 + 过程性考核20分</p>
+            <div class="sports-layout">
+                <div class="sports-info">
+                    <div class="sports-summary">
+                        <div class="summary-item">
+                            <i class="fas fa-running"></i>
+                            <div>
+                                <h4>现场考试</h4>
+                                <p>30分 · 4月至5月进行</p>
+                            </div>
+                        </div>
+                        <div class="summary-item">
+                            <i class="fas fa-clipboard-check"></i>
+                            <div>
+                                <h4>过程性考核</h4>
+                                <p>20分 · 初中阶段综合评定</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sports-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>现场考试采用"分类限选"模式，设置4大类22个项目。考生须从素质项目Ⅱ、运动能力Ⅰ、运动能力Ⅱ每类中各选择一个项目。</p>
+                    </div>
+                </div>
+                <div class="sports-categories">
+                    <div class="sport-category">
+                        <div class="category-header cat-required">
+                            <h3><i class="fas fa-star"></i> 素质项目Ⅰ（必考）</h3>
+                            <span class="category-score">8分</span>
+                        </div>
+                        <div class="category-body">
+                            <div class="sport-tags">
+                                <span class="sport-tag">1000米跑（男）</span>
+                                <span class="sport-tag">800米跑（女）</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sport-category">
+                        <div class="category-header cat-quality">
+                            <h3><i class="fas fa-dumbbell"></i> 素质项目Ⅱ（选一）</h3>
+                            <span class="category-score">8分</span>
+                        </div>
+                        <div class="category-body">
+                            <div class="sport-tags">
+                                <span class="sport-tag">引体向上</span>
+                                <span class="sport-tag">斜身引体</span>
+                                <span class="sport-tag">双杠臂屈伸</span>
+                                <span class="sport-tag">仰卧起坐</span>
+                                <span class="sport-tag">实心球</span>
+                                <span class="sport-tag">1分钟跳绳</span>
+                                <span class="sport-tag">原地纵跳摸高</span>
+                                <span class="sport-tag">立定跳远</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sport-category">
+                        <div class="category-header cat-ability1">
+                            <h3><i class="fas fa-basketball-ball"></i> 运动能力Ⅰ（选一）</h3>
+                            <span class="category-score">8分</span>
+                        </div>
+                        <div class="category-body">
+                            <div class="sport-tags">
+                                <span class="sport-tag">足球</span>
+                                <span class="sport-tag">篮球</span>
+                                <span class="sport-tag">排球</span>
+                                <span class="sport-tag">乒乓球</span>
+                                <span class="sport-tag">羽毛球</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sport-category">
+                        <div class="category-header cat-ability2">
+                            <h3><i class="fas fa-swimmer"></i> 运动能力Ⅱ（选一）</h3>
+                            <span class="category-score">6分</span>
+                        </div>
+                        <div class="category-body">
+                            <div class="sport-tags">
+                                <span class="sport-tag">体操组合</span>
+                                <span class="sport-tag">健身拳术套路</span>
+                                <span class="sport-tag">100米游泳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 招生录取 -->
+    <section class="section section-white" id="enrollment">
+        <div class="container">
+            <h2 class="section-title">招生录取</h2>
+            <p class="section-subtitle">三大阶段依次录取，被前一阶段录取不再参加后续阶段</p>
+            <div class="enrollment-stages">
+                <!-- 阶段一 -->
+                <div class="stage-card">
+                    <div class="stage-number">阶段一</div>
+                    <div class="stage-content">
+                        <h3>提前招生</h3>
+                        <div class="stage-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>包含集团直升等项目</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>部分学校自主招生</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>已录取考生不再参加后续阶段</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 阶段二 -->
+                <div class="stage-card stage-highlight">
+                    <div class="stage-number">阶段二</div>
+                    <div class="stage-content">
+                        <h3>指标分配招生</h3>
+                        <div class="stage-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span><strong>校额到校</strong>：优质高中不低于50%计划分配到一般初中</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span><strong>市级统筹</strong>：统筹优质教育资源配置</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>设<strong>8个志愿</strong>，每个志愿可填2个专业</span>
+                            </div>
+                            <div class="detail-item highlight-item">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span>要求总分不低于<strong>430分</strong>，综合素质评价达<strong>B等</strong>及以上</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 阶段三 -->
+                <div class="stage-card">
+                    <div class="stage-number">阶段三</div>
+                    <div class="stage-content">
+                        <h3>统一招生</h3>
+                        <div class="stage-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>设<strong>12个志愿</strong>，每个志愿可填2个专业</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>贯通培养项目（2026年起调入此批次）</span>
+                            </div>
+                            <div class="detail-item highlight-item">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span>贯通培养项目最低录取分数线<strong>380分</strong></span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>录取结束后可进行志愿征集</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="enrollment-note">
+                <i class="fas fa-lightbulb"></i>
+                <p>2026年实行<strong>考后知分填报志愿</strong>，考生在北京教育考试院网站依据招生简章填报。志愿填报时间为<strong>7月13日至17日</strong>。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 加分政策 -->
+    <section class="section section-light" id="bonus">
+        <div class="container">
+            <h2 class="section-title">录取加分政策</h2>
+            <p class="section-subtitle">符合多种条件的考生只能选择享受其中一种加分</p>
+            <div class="bonus-grid">
+                <div class="bonus-card bonus-20">
+                    <div class="bonus-header">
+                        <span class="bonus-points">+20分</span>
+                    </div>
+                    <div class="bonus-body">
+                        <ul>
+                            <li><i class="fas fa-medal"></i> 烈士子女</li>
+                            <li><i class="fas fa-medal"></i> 特定地区及岗位现役军人子女</li>
+                            <li><i class="fas fa-medal"></i> 特定地区及岗位消防救援人员子女</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bonus-card bonus-10">
+                    <div class="bonus-header">
+                        <span class="bonus-points">+10分</span>
+                    </div>
+                    <div class="bonus-body">
+                        <ul>
+                            <li><i class="fas fa-shield-alt"></i> 因公牺牲人民警察子女</li>
+                            <li><i class="fas fa-shield-alt"></i> 残疾人民警察子女</li>
+                            <li><i class="fas fa-shield-alt"></i> 见义勇为人员及其子女</li>
+                            <li><i class="fas fa-shield-alt"></i> 其他相关现役军人子女</li>
+                            <li><i class="fas fa-shield-alt"></i> 其他相关消防救援人员子女</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bonus-card bonus-5">
+                    <div class="bonus-header">
+                        <span class="bonus-points">+5分</span>
+                    </div>
+                    <div class="bonus-body">
+                        <ul>
+                            <li><i class="fas fa-globe-asia"></i> 归侨（华侨）子女</li>
+                            <li><i class="fas fa-globe-asia"></i> 台湾省籍考生</li>
+                            <li><i class="fas fa-globe-asia"></i> 从边疆、山区、牧区、少数民族聚居地区转学到本市就读的少数民族考生</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 报名条件 -->
+    <section class="section section-white" id="eligibility">
+        <div class="container">
+            <h2 class="section-title">报名条件</h2>
+            <p class="section-subtitle">京籍与非京籍考生报名要求说明</p>
+            <div class="eligibility-layout">
+                <div class="eligibility-card">
+                    <div class="eligibility-header eli-local">
+                        <i class="fas fa-home"></i>
+                        <h3>京籍考生</h3>
+                    </div>
+                    <div class="eligibility-body">
+                        <ul>
+                            <li>具有本市户籍的应届初三年级学生</li>
+                            <li>具有本市户籍的年龄在18周岁以下（2008年9月1日及以后出生）的往届生</li>
+                            <li>积分落户人员随迁子女</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="eligibility-card">
+                    <div class="eligibility-header eli-nonlocal">
+                        <i class="fas fa-plane-arrival"></i>
+                        <h3>非京籍考生</h3>
+                    </div>
+                    <div class="eligibility-body">
+                        <ul>
+                            <li>原北京下乡知青子女</li>
+                            <li>台胞子女</li>
+                            <li>博士后研究人员子女</li>
+                            <li>随军子女</li>
+                            <li>北京市工作居住证持有人子女</li>
+                            <li>父母一方有本市常住户籍的考生</li>
+                            <li>符合条件的进城务工人员随迁子女（可报考中等职业学校）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 时间安排 -->
+    <section class="section section-dark" id="timeline">
+        <div class="container">
+            <h2 class="section-title title-light">重要时间节点</h2>
+            <p class="section-subtitle subtitle-light">2026年北京中考关键时间安排</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">1月</div>
+                        <h3>体育现场考试报项</h3>
+                        <p>考生完成体育现场考试项目的选报工作</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">3月</div>
+                        <h3>中招政策发布</h3>
+                        <p>北京市教委发布2026年中招工作意见及实施方案</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">4月-5月</div>
+                        <h3>体育现场考试</h3>
+                        <p>进行体育与健康科目现场考试（30分）</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker active"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">6月24日-25日</div>
+                        <h3>文化课统一考试</h3>
+                        <p>语文、数学、外语、道德与法治、物理五科笔试</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">7月初</div>
+                        <h3>成绩公布</h3>
+                        <p>中考成绩及各区分数段统计公布</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">7月13日-17日</div>
+                        <h3>志愿填报</h3>
+                        <p>考生在北京教育考试院网站填报指标分配及统一招生志愿</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">7月-8月</div>
+                        <h3>录取工作</h3>
+                        <p>按提前招生、指标分配招生、统一招生三个阶段依次录取</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="section section-light" id="faq">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+            <p class="section-subtitle">家长和考生最关心的热点问题</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>2026年中考总分是多少？哪些科目计入？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>2026年北京中考总分为510分，计入6个科目：语文（100分）、数学（100分）、外语（100分）、道德与法治（80分）、物理（80分）、体育与健康（50分）。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>校额到校需要满足什么条件？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>参加校额到校招生需满足两个条件：一是中考总成绩不低于430分；二是综合素质评价达到B等及以上。优质普通高中会将不低于50%的招生计划分配到一般初中校。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>外语听说机考有几次机会？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>外语听说机考有两次考试机会，取两次成绩中的最高分计入中考总分。考生可以根据自身情况决定是否参加两次考试。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>贯通培养项目2026年有什么变化？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>2026年起，高端技术技能人才贯通培养项目从原来的提前批调整至统一招生批次进行录取。考生录取总分须达到380分。这一调整给了考生更多选择空间。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>非京籍考生可以报考普通高中吗？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>符合条件的非京籍考生（如台胞子女、博士后子女、随军子女、工作居住证持有人子女、父母一方有本市户籍的考生等）可以报考普通高中。进城务工人员随迁子女可报考中等职业学校。具体条件请参考北京教育考试院官方公告。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>登记入学试点覆盖哪些区？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>2026年，登记入学试点在原有东城、西城的基础上，扩大到平谷区。平谷区部分普通高中开展登记入学试点，符合条件的考生可通过登记方式直接入学。</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- 页脚 -->
     <footer>
-        <p>&copy; 2026 yangyiyao. 基于 GitHub Pages 强力驱动.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-graduation-cap"></i> 2026北京中考政策说明</h3>
+                    <p>本网站内容整理自北京市教育委员会及北京教育考试院公开发布的政策文件，仅供参考。具体政策以官方最新公告为准。</p>
+                </div>
+                <div class="footer-links">
+                    <h4>官方渠道</h4>
+                    <ul>
+                        <li><a href="https://www.bjeea.cn" target="_blank">北京教育考试院</a></li>
+                        <li><a href="https://www.beijing.gov.cn" target="_blank">首都之窗</a></li>
+                        <li><a href="https://jw.beijing.gov.cn" target="_blank">北京市教育委员会</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 北京中考政策说明 · 信息来源于北京市教育委员会及北京教育考试院 · 仅供参考</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- 返回顶部 -->
+    <button class="back-to-top" id="backToTop" title="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
