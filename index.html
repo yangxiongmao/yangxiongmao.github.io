@@ -3,137 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人主页 | Portfolio</title>
+    <meta name="description" content="2026年北京中考命题方向交互分析页，覆盖学科趋势、能力要求、备考路线与互动自测。">
+    <title>2026北京中考命题方向交互指南</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- 引入字体图标 -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">My<span>Portfolio</span></a>
+    <header class="site-header" id="top">
+        <nav class="navbar" aria-label="主导航">
+            <a class="logo" href="#top">北京中考<span>2026</span></a>
+            <button class="menu-btn" type="button" aria-label="打开导航菜单" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
             <ul class="nav-links">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#skills">技能</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#contact">联系我</a></li>
+                <li><a href="#overview">趋势总览</a></li>
+                <li><a href="#subjects">学科方向</a></li>
+                <li><a href="#skills">能力雷达</a></li>
+                <li><a href="#plan">备考路线</a></li>
+                <li><a href="#quiz">互动自测</a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- 首页介绍 (Hero Section) -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>你好，我是 <span>yangyiyao</span></h1>
-            <h3>一名前端开发者 / 创作者</h3>
-            <p>我热爱编程与设计，致力于构建美观且实用的 Web 应用。欢迎来到我的个人数字花园！</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
-            </div>
-            <a href="#about" class="btn">了解更多</a>
-        </div>
-    </section>
-
-    <!-- 关于我 -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>你好！我是一个对技术充满热情的开发者。我喜欢学习新工具，解决复杂问题，并将创意转化为现实代码。</p>
-                    <p>在业余时间，我喜欢阅读、写博客、参与开源项目。我相信技术可以改变世界，并希望通过我的代码带来积极的影响。</p>
-                    <a href="#contact" class="btn btn-outline">联系我</a>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">面向初三学生、家长与教师</p>
+                <h1>2026年北京中考命题方向交互指南</h1>
+                <p class="hero-text">
+                    基于北京近年中考试题变化、课程标准导向与综合素养评价趋势，整理出更重情境、更重思维过程、更重跨学科应用的备考观察。
+                </p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#subjects">查看学科趋势</a>
+                    <a class="btn ghost" href="#quiz">做一份自测</a>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-panel" aria-label="关键趋势摘要">
+                <div class="score-ring">
+                    <span>2026</span>
+                    <strong>方向研判</strong>
+                </div>
+                <ul class="trend-list">
+                    <li><i class="fas fa-check-circle" aria-hidden="true"></i> 真实情境与北京本土素材增加</li>
+                    <li><i class="fas fa-check-circle" aria-hidden="true"></i> 解释、论证、探究类设问更突出</li>
+                    <li><i class="fas fa-check-circle" aria-hidden="true"></i> 由刷题速度转向信息提取与迁移</li>
+                </ul>
+            </div>
+        </section>
+    </header>
 
-    <!-- 技能栈 -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">技能栈</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>前端开发</h3>
-                    <p>HTML5, CSS3, JavaScript, React, Vue</p>
+    <main>
+        <section class="section overview" id="overview">
+            <div class="section-heading">
+                <p class="eyebrow">Trend Overview</p>
+                <h2>命题变化的四个关键词</h2>
+                <p>页面内容为备考参考，不等同于官方命题说明或押题。</p>
+            </div>
+            <div class="overview-grid">
+                <article class="insight-card">
+                    <span class="card-icon"><i class="fas fa-city" aria-hidden="true"></i></span>
+                    <h3>情境化</h3>
+                    <p>试题更常把知识放进社会生活、科技发展、北京文化与校园实践中，考查学生能否读懂材料并建立知识联系。</p>
+                </article>
+                <article class="insight-card">
+                    <span class="card-icon"><i class="fas fa-brain" aria-hidden="true"></i></span>
+                    <h3>思维化</h3>
+                    <p>从“会不会做”扩展到“为什么这样做”，强调推理路径、证据意识、表达逻辑与反思修正。</p>
+                </article>
+                <article class="insight-card">
+                    <span class="card-icon"><i class="fas fa-people-arrows" aria-hidden="true"></i></span>
+                    <h3>综合化</h3>
+                    <p>跨章节、跨学科、跨文本的信息整合比例上升，单点记忆的收益下降，知识网络更关键。</p>
+                </article>
+                <article class="insight-card">
+                    <span class="card-icon"><i class="fas fa-seedling" aria-hidden="true"></i></span>
+                    <h3>素养化</h3>
+                    <p>关注核心素养落地：阅读理解、模型建构、实验探究、审美鉴赏、家国情怀与责任意识。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section subjects" id="subjects">
+            <div class="section-heading">
+                <p class="eyebrow">Subject Explorer</p>
+                <h2>按学科查看可能的命题侧重点</h2>
+                <p>点击学科标签，切换查看方向、题型信号与备考动作。</p>
+            </div>
+            <div class="subject-tabs" role="tablist" aria-label="学科方向">
+                <button class="subject-tab active" type="button" role="tab" aria-selected="true" data-subject="chinese">语文</button>
+                <button class="subject-tab" type="button" role="tab" aria-selected="false" data-subject="math">数学</button>
+                <button class="subject-tab" type="button" role="tab" aria-selected="false" data-subject="english">英语</button>
+                <button class="subject-tab" type="button" role="tab" aria-selected="false" data-subject="physics">物理</button>
+                <button class="subject-tab" type="button" role="tab" aria-selected="false" data-subject="chemistry">化学</button>
+                <button class="subject-tab" type="button" role="tab" aria-selected="false" data-subject="politics">道法</button>
+                <button class="subject-tab" type="button" role="tab" aria-selected="false" data-subject="history">历史</button>
+            </div>
+            <article class="subject-panel" aria-live="polite">
+                <div>
+                    <p class="panel-label" id="subjectLabel">Chinese</p>
+                    <h3 id="subjectTitle">语文：从文本理解走向任务表达</h3>
+                    <p id="subjectSummary">阅读材料可能继续强调多文本整合、中华优秀传统文化、北京地域文化与现实议题，作文更重真实任务、对象意识和思辨表达。</p>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-node-js"></i>
-                    <h3>后端开发</h3>
-                    <p>Node.js, Python, Express, RESTful API</p>
+                <div class="panel-columns">
+                    <div>
+                        <h4>题型信号</h4>
+                        <ul id="signalList"></ul>
+                    </div>
+                    <div>
+                        <h4>备考动作</h4>
+                        <ul id="actionList"></ul>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>数据库 & 工具</h3>
-                    <p>MySQL, MongoDB, Git, Docker, Webpack</p>
+            </article>
+        </section>
+
+        <section class="section skills" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">Ability Radar</p>
+                <h2>能力雷达：看看命题更关注什么</h2>
+                <p>滑动调节你的掌握度，生成个性化提示。</p>
+            </div>
+            <div class="radar-layout">
+                <div class="radar-card">
+                    <canvas id="radarCanvas" width="360" height="360" aria-label="能力雷达图"></canvas>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-row">
+                        <label for="readingRange">信息提取</label>
+                        <input id="readingRange" type="range" min="1" max="5" value="3" data-skill="reading">
+                    </div>
+                    <div class="slider-row">
+                        <label for="reasoningRange">逻辑推理</label>
+                        <input id="reasoningRange" type="range" min="1" max="5" value="3" data-skill="reasoning">
+                    </div>
+                    <div class="slider-row">
+                        <label for="modelRange">模型建构</label>
+                        <input id="modelRange" type="range" min="1" max="5" value="3" data-skill="model">
+                    </div>
+                    <div class="slider-row">
+                        <label for="expressionRange">规范表达</label>
+                        <input id="expressionRange" type="range" min="1" max="5" value="3" data-skill="expression">
+                    </div>
+                    <div class="slider-row">
+                        <label for="transferRange">迁移应用</label>
+                        <input id="transferRange" type="range" min="1" max="5" value="3" data-skill="transfer">
+                    </div>
+                    <p class="radar-tip" id="radarTip">当前画像较均衡，建议用真题材料训练“读题-建模-表达”的完整链条。</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 项目展示 -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">我的项目</h2>
-            <div class="project-grid">
-                <!-- 项目 1 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="项目 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>极简任务管理 App</h3>
-                        <p>一个基于 React 构建的现代化待办事项应用，支持本地存储和暗黑模式切换。</p>
-                        <a href="#" class="project-link">查看源码 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- 项目 2 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="项目 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>个人博客系统</h3>
-                        <p>使用 Node.js 和 MongoDB 开发的全栈博客，包含 Markdown 编辑、评论和标签管理功能。</p>
-                        <a href="#" class="project-link">查看源码 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- 项目 3 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="项目 3">
-                    </div>
-                    <div class="project-info">
-                        <h3>天气预报看板</h3>
-                        <p>调用第三方天气 API 的实时数据可视化面板，UI 响应式设计，适配所有设备屏幕。</p>
-                        <a href="#" class="project-link">查看源码 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+        <section class="section plan" id="plan">
+            <div class="section-heading">
+                <p class="eyebrow">Preparation Roadmap</p>
+                <h2>三阶段备考路线</h2>
+                <p>点击阶段卡片，查看对应目标与行动清单。</p>
             </div>
-        </div>
-    </section>
+            <div class="timeline">
+                <button class="timeline-item active" type="button" data-stage="foundation">
+                    <span>01</span>
+                    <strong>夯基建网</strong>
+                </button>
+                <button class="timeline-item" type="button" data-stage="scenario">
+                    <span>02</span>
+                    <strong>情境突破</strong>
+                </button>
+                <button class="timeline-item" type="button" data-stage="simulation">
+                    <span>03</span>
+                    <strong>综合演练</strong>
+                </button>
+            </div>
+            <article class="stage-panel">
+                <h3 id="stageTitle">夯基建网：把碎片知识连成结构</h3>
+                <p id="stageText">先完成课标核心概念、必备公式、重点文体、实验原理与史实线索的系统梳理，避免只按题型记套路。</p>
+                <ul id="stageList"></ul>
+            </article>
+        </section>
 
-    <!-- 联系方式 -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">联系我</h2>
-            <p class="contact-text">有项目合作意向或者只想打个招呼？欢迎随时联系我！</p>
-            <a href="mailto:your-email@example.com" class="btn">发邮件给我</a>
-        </div>
-    </section>
+        <section class="section quiz" id="quiz">
+            <div class="section-heading">
+                <p class="eyebrow">Interactive Check</p>
+                <h2>互动自测：你的备考策略匹配吗？</h2>
+                <p>选择最符合现状的选项，获得即时建议。</p>
+            </div>
+            <form class="quiz-card" id="strategyQuiz">
+                <fieldset>
+                    <legend>1. 遇到长材料题时，你通常会怎么做？</legend>
+                    <label><input type="radio" name="q1" value="1"> 先找熟悉公式或关键词，尽快套题型</label>
+                    <label><input type="radio" name="q1" value="2"> 标出人物、数据、条件和问题，再决定知识点</label>
+                    <label><input type="radio" name="q1" value="3"> 能主动画图、列结构或改写材料信息</label>
+                </fieldset>
+                <fieldset>
+                    <legend>2. 复盘错题时，你更关注什么？</legend>
+                    <label><input type="radio" name="q2" value="1"> 记住这道题的答案和解法</label>
+                    <label><input type="radio" name="q2" value="2"> 记录错因并归类到知识模块</label>
+                    <label><input type="radio" name="q2" value="3"> 追问同类情境如何变式，补充表达模板</label>
+                </fieldset>
+                <fieldset>
+                    <legend>3. 面对开放或论证类设问，你的表达状态是？</legend>
+                    <label><input type="radio" name="q3" value="1"> 想到什么写什么，容易漏条件</label>
+                    <label><input type="radio" name="q3" value="2"> 会按观点、依据、结论组织答案</label>
+                    <label><input type="radio" name="q3" value="3"> 能结合材料证据，写出有层次的解释</label>
+                </fieldset>
+                <button class="btn primary" type="submit">生成建议</button>
+                <p class="quiz-result" id="quizResult" role="status">完成三题后可生成你的备考策略建议。</p>
+            </form>
+        </section>
 
-    <!-- 页脚 -->
-    <footer>
-        <p>&copy; 2026 yangyiyao. 基于 GitHub Pages 强力驱动.</p>
+        <section class="section resources" id="resources">
+            <div class="section-heading">
+                <p class="eyebrow">Checklist</p>
+                <h2>一页式备考清单</h2>
+            </div>
+            <div class="checklist">
+                <label><input type="checkbox"> 每周完成一组跨文本或长材料阅读训练</label>
+                <label><input type="checkbox"> 每科建立“概念-方法-情境-易错”四列表</label>
+                <label><input type="checkbox"> 理科实验题坚持写出变量、现象、结论与误差</label>
+                <label><input type="checkbox"> 文科论证题使用“观点+材料证据+学科语言+结论”结构</label>
+                <label><input type="checkbox"> 模考后复盘时间分配、审题路径和表达扣分点</label>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 北京中考命题方向交互指南 · 内容仅供学习规划参考</p>
+        <a href="#top">返回顶部</a>
     </footer>
 
     <script src="js/script.js"></script>
