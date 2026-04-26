@@ -16,9 +16,7 @@
         <div class="badge"><i class="fas fa-award"></i> 北大熊猫老师</div>
         <h1>2026年北京市中考一模 · 光荣喜报</h1>
         <p class="subtitle">数学 · 物理 一模成绩光荣榜</p>
-        <div class="stats-overview" id="statsOverview">
-          <!-- JS 动态填充 -->
-        </div>
+        <div class="stats-overview" id="statsOverview"></div>
       </div>
     </header>
 
@@ -65,7 +63,10 @@
     <section class="table-section">
       <div class="table-header">
         <h2><i class="fas fa-trophy"></i> 光荣榜单</h2>
-        <span class="count-badge" id="countBadge">共 0 人</span>
+        <div class="table-header-right">
+          <span class="count-badge" id="countBadge">共 0 人</span>
+          <button class="btn-manage" id="btnManage"><i class="fas fa-cog"></i> 管理数据</button>
+        </div>
       </div>
       <div class="table-wrapper">
         <table id="scoreTable">
@@ -87,9 +88,7 @@
               </th>
             </tr>
           </thead>
-          <tbody id="scoreBody">
-            <!-- JS 动态渲染 -->
-          </tbody>
+          <tbody id="scoreBody"></tbody>
         </table>
       </div>
       <div class="empty-state" id="emptyState" style="display:none;">
@@ -101,15 +100,103 @@
     <!-- 数据分析面板 -->
     <section class="analytics-section">
       <h2><i class="fas fa-chart-line"></i> 成绩分析</h2>
-      <div class="analytics-grid" id="analyticsGrid">
-        <!-- JS 动态填充 -->
-      </div>
+      <div class="analytics-grid" id="analyticsGrid"></div>
     </section>
 
     <footer>
       <p>北大熊猫老师 · 2026年一模喜报 · 数据仅供参考</p>
     </footer>
   </div>
+
+  <!-- 数据管理弹窗 -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3><i class="fas fa-database"></i> 数据管理</h3>
+        <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <!-- 工具栏 -->
+        <div class="manage-toolbar">
+          <button class="btn-action btn-add" id="btnAdd"><i class="fas fa-plus"></i> 新增学员</button>
+          <button class="btn-action btn-export" id="btnExport"><i class="fas fa-download"></i> 导出 JSON</button>
+          <label class="btn-action btn-import">
+            <i class="fas fa-upload"></i> 导入 JSON
+            <input type="file" id="fileImport" accept=".json" hidden>
+          </label>
+          <button class="btn-action btn-restore" id="btnRestore"><i class="fas fa-undo"></i> 恢复默认</button>
+        </div>
+
+        <!-- 新增/编辑表单 -->
+        <div class="form-panel" id="formPanel" style="display:none;">
+          <h4 id="formTitle">新增学员</h4>
+          <form id="studentForm">
+            <input type="hidden" id="editId" value="">
+            <div class="form-row">
+              <div class="form-field">
+                <label>姓名 *</label>
+                <input type="text" id="fName" required placeholder="如：张*轩">
+              </div>
+              <div class="form-field">
+                <label>区域 *</label>
+                <select id="fDistrict" required>
+                  <option value="海淀区">海淀区</option>
+                  <option value="西城区">西城区</option>
+                  <option value="东城区">东城区</option>
+                  <option value="朝阳区">朝阳区</option>
+                  <option value="丰台区">丰台区</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label>学校 *</label>
+                <input type="text" id="fSchool" required placeholder="如：人大附中">
+              </div>
+              <div class="form-field">
+                <label>年级</label>
+                <input type="text" id="fGrade" value="初三" placeholder="初三">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label>数学成绩 (0-100) *</label>
+                <input type="number" id="fMath" required min="0" max="100" placeholder="0-100">
+              </div>
+              <div class="form-field">
+                <label>物理成绩 (0-80) *</label>
+                <input type="number" id="fPhysics" required min="0" max="80" placeholder="0-80">
+              </div>
+            </div>
+            <div class="form-buttons">
+              <button type="submit" class="btn-save"><i class="fas fa-check"></i> 保存</button>
+              <button type="button" class="btn-cancel" id="btnCancelForm"><i class="fas fa-times"></i> 取消</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- 数据列表 -->
+        <div class="manage-table-wrapper">
+          <table class="manage-table">
+            <thead>
+              <tr>
+                <th>姓名</th>
+                <th>区域</th>
+                <th>学校</th>
+                <th>数学</th>
+                <th>物理</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody id="manageBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast 提示 -->
+  <div class="toast-container" id="toastContainer"></div>
 
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
